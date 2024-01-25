@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contatos - SoftWave Tech</title>
+    <script src="https://kit.fontawesome.com/4ffd0afa68.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Maven+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/32517d1f-60bb-4ef1-b427-d07c0263a502/dgkjqrn-c23f4b54-60ac-42d1-8475-1a69c299af36.jpg/v1/fill/w_894,h_894,q_70,strp/untitled_by_trafalgothlaw_dgkjqrn-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzMyNTE3ZDFmLTYwYmItNGVmMS1iNDI3LWQwN2MwMjYzYTUwMlwvZGdranFybi1jMjNmNGI1NC02MGFjLTQyZDEtODQ3NS0xYTY5YzI5OWFmMzYuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.33HRPpo7_cdvSiq0OdNnsypQE7XhSKs8fgTDGAFydO4" type="image/png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<STYLE>A {text-decoration:none;} </STYLE>
+<body>
+    <div class="wrapper">
+      <div class="sidebar">
+        <div class="solo">
+        <i class="fa-solid fa-wave-square"></i>
+      </div>
+        <h2>SoftWave Tech</h2>
+        
+        <ul class="sidebar">
+          <li class="three"><a href="contato.html"><i class="fa-solid fa-address-book"></i>Contatos</a></li>
+          <li class="dropdown"><a href="servicos.html"><i class="fa-solid fa-briefcase"></i>Serviços</a></a>
+          <ul>
+            <li class="apenas"><a href="#">Desenvolvimento</a></li>
+            <li class="apenas"><a href="#">Consultoria</a></li>
+            <li class="apenas"><a href="#">Suporte Técnico</a></li>
+          </ul>
+          </li>
+          <li class="three"><a href="index.html"><i class="fa-solid fa-house"></i>Página Inicial</a></li>
+        </ul>
+
+        <div class="socialmedia">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    <div class="mainconteudo">
+      <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png" id="btnBusca" alt="Buscar"/>
+      </div>
+      <div class="cab">
+        NOSSOS CONTATOS
+        <div class="more-info">
+          <section class="formul">
+            <form action="#">
+              <div class="linha1">
+              <label for="">Nome</label>
+                    <input class="one" type="text">
+                    <label for="">Sobrenome</label>
+                    <input class="one" type="text">
+              </div>
+                    <div class="linha2">
+                    <label for="">Gênero</label>
+                    <select class="two" id="genders">
+                      <option value="fem">Feminino</option>
+                      <option value="masc">Masculino</option>
+                      <option value="others">Outros</option>
+                    </select>
+          <label for="">Data de nascimento</label>
+                <input class="two" type="date">
+              </div>
+              <div class="linha3">
+                <p>Selecione seu estado:</p>
+                <select class="two" id="estado" onchange="buscaCidades(this.value)"> 
+                  <option value="estado">Estado</option> 
+                  <option value="ac">Acre</option> 
+                  <option value="al">Alagoas</option> 
+                  <option value="am">Amazonas</option> 
+                  <option value="ap">Amapá</option> 
+                  <option value="ba">Bahia</option> 
+                  <option value="ce">Ceará</option> 
+                  <option value="df">Distrito Federal</option> 
+                  <option value="es">Espírito Santo</option> 
+                  <option value="go">Goiás</option> 
+                  <option value="ma">Maranhão</option> 
+                  <option value="mt">Mato Grosso</option> 
+                  <option value="ms">Mato Grosso do Sul</option> 
+                  <option value="mg">Minas Gerais</option> 
+                  <option value="pa">Pará</option> 
+                  <option value="pb">Paraíba</option> 
+                  <option value="pr">Paraná</option> 
+                  <option value="pe">Pernambuco</option> 
+                  <option value="pi">Piauí</option> 
+                  <option value="rj">Rio de Janeiro</option> 
+                  <option value="rn">Rio Grande do Norte</option> 
+                  <option value="ro">Rondônia</option> 
+                  <option value="rs">Rio Grande do Sul</option> 
+                  <option value="rr">Roraima</option> 
+                  <option value="sc">Santa Catarina</option> 
+                  <option value="se">Sergipe</option> 
+                  <option value="sp">São Paulo</option> 
+                  <option value="to">Tocantins</option> 
+              </select>
+                <p>Selecione sua cidade:</p>
+          <select class="two" id="cidade">
+            <option value="" disabled selected>Cidade</option>
+          </select>
+        </div>
+        <div class="linha4-1">
+          <label for="">Endereço de Email</label>
+          <div class="linha4-input">
+          <input class="one" type="email">
+        </div>
+        </div>
+          <div class="linha4-2">
+      <label class="telep-" for="">Número de Telefone</label>
+      <div class="linha4-input">
+      <input class="one" type="tel">
+    </div>
+    </div>
+              <div class="texto">
+               <label for="">Deixe aqui sua mensagem</label>
+               <div class="areadetexto">
+                    <textarea class="one-text" rows="4" cols="40"></textarea>
+                  </div>
+                </div>
+                <button class="button-45" role="button"><a href="home.html">Enviar</a></button>
+           </form>
+          </section>
+        </div>
+        <div class="info">
+          <img class="form-pic" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/32517d1f-60bb-4ef1-b427-d07c0263a502/dgllcuc-85bdd258-1dcd-41a2-911b-fd208e35b9c5.jpg/v1/fit/w_720,h_1280,q_70,strp/untitled_by_trafalgothlaw_dgllcuc-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzMyNTE3ZDFmLTYwYmItNGVmMS1iNDI3LWQwN2MwMjYzYTUwMlwvZGdsbGN1Yy04NWJkZDI1OC0xZGNkLTQxYTItOTExYi1mZDIwOGUzNWI5YzUuanBnIiwid2lkdGgiOiI8PTcyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.8I9CffFYYJKjGHrNesJcV8ISgzLCiu3R1k1S7b7Z1fg" alt="">
+         </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <h2>Entre em contato conosco:</h2>
+      <div class="loc">
+      <i class="fa-solid fa-location-dot"></i>
+      <p>8266 Gygax</p>
+      <p>Norfolk, VA</p>
+    </div>
+      <div class="phone">
+      <i class="fa-solid fa-phone"></i>
+      <p>(12) 3456-7890</p>
+    </div>  
+      <div class="mail">    
+      <i class="fa-solid fa-envelope"></i>
+     <p><a href="mailto:contato@softwavetech.com">contato@softwavetech.com</a></p>
+    </div>
+    </div>
+</body>
+</body>
+<script src="script.js"></script>
+</html>
